@@ -12,5 +12,11 @@ use GDO\Core\GDO_Module;
  */
 final class Module_Website extends GDO_Module
 {
+    public function onLoadLanguage() { return $this->onLoadLanguage(); }
+
+    public function getConfig()
+    {
+        return [];
+    }
     
 }
