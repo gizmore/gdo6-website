@@ -12,7 +12,7 @@ use GDO\Core\GDO_Module;
  */
 final class Module_Website extends GDO_Module
 {
-    public function onLoadLanguage() { return $this->onLoadLanguage(); }
+    public function onLoadLanguage() { return $this->loadLanguage('lang/website'); }
 
     public function getConfig()
     {
