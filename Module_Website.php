@@ -38,10 +38,10 @@ final class Module_Website extends GDO_Module
     		'name',
     	];
     	Website::addMeta($meta);
-    	Website::addHead(sprintf('<meta property="og:title" content="%s">', Website::displayTitle()));
-    	Website::addHead(sprintf('<meta property="og:type" content="%s">', t('application_type')));
-    	Website::addHead(sprintf('<meta property="og:url" content="%s">', html(GDT_Url::absolute(urldecode((string)@$_SERVER['REQUEST_URI'])))));
-    	Website::addHead(sprintf('<meta name="theme-color" content="%s">', $this->getConfigVar('theme_color')));
+    	Website::addHead(sprintf('<meta property="og:title" content="%s" />', Website::displayTitle()));
+    	Website::addHead(sprintf('<meta property="og:type" content="%s" />', t('application_type')));
+    	Website::addHead(sprintf('<meta property="og:url" content="%s" />', GDT_Url::absolute(((string)@$_SERVER['REQUEST_URI']))));
+    	Website::addHead(sprintf('<meta name="theme-color" content="%s" />', $this->getConfigVar('theme_color')));
     }
     
 }
